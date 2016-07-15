@@ -1,0 +1,102 @@
+body {
+	background-color: #eceff0; /* Gray */
+}
+
+body,input{
+	font: 1em "Open Sans", sans-serif;
+	color: #363639;
+}
+
+a{
+	text-decoration: none;
+	border-bottom: 1px dashed #363639;
+}
+
+/* LIST */
+
+.list {
+	background-color: #fff;
+	margin: 20px auto;
+	width: 100%;
+	max-width: 500px;
+	padding: 20px;
+	border-radius: 2px;
+	box-shadow: 3px 3px 0 rgba(0,0,0,.1);
+	box-sizing: border-box;
+}
+
+
+/* Header */
+
+.list .header{
+	font-family: "Shadows Into Light Two", cursive;
+	margin: 0 0 10px 0;
+	box-shadow: 3px 3px #eceff0;
+}
+
+
+/* Items */
+
+.items {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.items li:hover .done-button{
+	opacity: 1;
+}
+
+.items li, .item-add .input{
+	border: 0;
+	border-bottom: 1px dashed #ccc;
+	padding: 15px 0;
+}
+
+.input{
+	width: 100%;
+}
+
+/* Geting rid of the blue line around input box */
+.input:focus {
+	outline: none;
+}
+
+.items .item.done{
+	text-decoration: line-through;
+}
+
+/* Done-button */
+.done-button{
+	display: inline-block;
+	font-size: 0.8em;
+	background-color: #d9dfe1;
+	color: #363639;
+	padding: 3px 3px;
+	border: 0;
+	opacity: 0.4;
+}
+
+.delete{
+	background-color: #ff4d4d;
+	opacity: 0.1;
+	display: inline-block;
+	font-size: 0.8em;
+	color: black;
+	border: 0;
+	padding: 3px 3px;
+}
+
+li:hover .delete{
+	opacity: 0.4;
+}
+
+/* Submit Button */
+.submit {
+	background-color: #fff;
+	padding: 5px 10px;
+	border: 1px solid #ddd;
+	width: 100%;
+	margin-top: 10px;
+	box-shadow: 3px 3px 0 #ddd;
+}
